@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여의도 마사지 정보 블로그 | 너 여기서 풀어야 돼</title>
+    <meta name="description" content="여의도 마사지, 가짜 정보에 속지 마라. 진짜 후기, 진짜 가격, 진짜 힐링. 여의도 마사지 정보는 이게 끝이다. 전화 010-6279-0862">
+    <meta name="keywords" content="여의도 마사지, 여의도 마사지 정보, 여의도 마사지 후기, 여의도 마사지 가격, 여의도 마사지 추천, 여의도 스웨디시, 여의도 건마, 여의도 1인샵">
+    <meta name="author" content="여의도 마사지 정보">
+    <link rel="canonical" href="https://t3b08-yd-massage-info.vercel.app/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <meta property="og:title" content="여의도 마사지 정보 블로그 | 너 여기서 풀어야 돼">
+    <meta property="og:description" content="여의도 마사지, 가짜 정보에 속지 마라. 진짜 후기, 진짜 가격, 진짜 힐링. 여의도 마사지 정보는 이게 끝이다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b08-yd-massage-info.vercel.app/blog">
+    <meta property="og:image" content="https://t3b08-yd-massage-info.vercel.app/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: 'Courier New', Courier, monospace; background: #1a1a1a; color: #e0e0e0; line-height: 1.6; min-height: 100vh; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Impact', 'Arial Black', sans-serif; text-transform: uppercase; letter-spacing: 2px; color: #f0e68c; }
+        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 4px 4px 0 #000; }
+        h2 { font-size: 2.2rem; margin-bottom: 0.8rem; border-left: 8px solid #f0e68c; padding-left: 1rem; }
+        h3 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+        p { font-size: 1.1rem; margin-bottom: 1rem; color: #ccc; }
+        a { color: #f0e68c; text-decoration: underline; text-underline-offset: 4px; transition: all 0.2s; }
+        a:hover { color: #fff; background: #f0e68c; text-decoration: none; padding: 0 4px; }
+        a:active { color: #000; background: #ff4500; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        section { padding: 60px 0; position: relative; border-bottom: 4px dashed #333; }
+        section::before { content: '✖'; position: absolute; top: 20px; right: 20px; font-size: 2rem; color: #f0e68c; opacity: 0.3; }
+        nav { background: #111; padding: 20px 0; border-bottom: 4px solid #f0e68c; position: sticky; top: 0; z-index: 1000; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { font-size: 1.8rem; font-weight: bold; color: #f0e68c; text-decoration: none; text-transform: uppercase; letter-spacing: 3px; }
+        nav .logo:hover { background: transparent; color: #fff; }
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav ul li a { color: #ccc; text-decoration: none; font-size: 1rem; text-transform: uppercase; letter-spacing: 1px; padding: 5px 10px; border: 2px solid transparent; }
+        nav ul li a:hover { color: #f0e68c; border-color: #f0e68c; background: transparent; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+        .hamburger span { width: 30px; height: 3px; background: #f0e68c; transition: all 0.3s; }
+        @media (max-width: 768px) {
+            nav ul { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #111; padding: 20px; border-bottom: 4px solid #f0e68c; }
+            nav ul.active { display: flex; }
+            .hamburger { display: flex; }
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.6rem; }
+            .container { padding: 0 15px; }
+        }
+        .tel-link { display: inline-block; background: #f0e68c; color: #000; padding: 12px 30px; font-size: 1.3rem; font-weight: bold; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; border: 4px solid #fff; transition: all 0.2s; }
+        .tel-link:hover { background: #fff; color: #000; border-color: #f0e68c; transform: scale(1.05); }
+        .blog-card { background: #222; padding: 30px; margin-bottom: 30px; border-left: 6px solid #f0e68c; box-shadow: 8px 8px 0 #000; }
+        .blog-card h2 { border-left: none; padding-left: 0; margin-top: 0; }
+        .blog-card .meta { font-size: 0.9rem; color: #888; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .blog-card p { color: #bbb; }
+        .blog-card .read-more { display: inline-block; margin-top: 15px; padding: 8px 20px; background: #f0e68c; color: #000; text-decoration: none; font-weight: bold; text-transform: uppercase; }
+        .blog-card .read-more:hover { background: #fff; }
+        footer { background: #111; padding: 40px 0; text-align: center; border-top: 4px solid #f0e68c; margin-top: 60px; }
+        footer p { color: #666; font-size: 0.9rem; }
+        .highlight { color: #f0e68c; font-weight: bold; }
+        .blockquote { border-left: 4px solid #f0e68c; padding-left: 20px; margin: 20px 0; font-style: italic; color: #aaa; }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">✖ 여의도 마사지</a>
+            <ul id="nav-menu">
+                <li><a href="/">홈</a></li>
+                <li><a href="/blog">블로그</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/review">후기</a></li>
+                <li><a href="tel:010-6279-0862">📞 전화</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h1>여의도 마사지 정보 블로그</h1>
+            <p>가짜 정보는 그만. 진짜 여의도 마사지, 진짜 후기, 진짜 가격. 여기서 다 까발린다.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="blog-card">
+                <div class="meta">📅 2025.03.15 | ✍️ 여의도 마사지 정보팀</div>
+                <h2>여의도 마사지, 왜 다 가짜야?</h2>
+                <p>여의도 마사지 검색하면 나오는 정보들. 반은 광고고 반은 가짜야. 진짜 후기 하나 제대로 못 찾겠지? 여기 여의도 마사지 정보가 진짜다. 우리가 직접 가보고, 느끼고, 돈 내고 써본 후기만 올린다.</p>
+                <p>여의도 스웨디시, 여의도 건마, 여의도 1인샵. 이름만 다르고 똑같은 수법에 속지 마라. 진짜 힐링을 원한다면, 가짜 정보 걸러내는 법부터 배워야 한다.</p>
+                <div class="blockquote">
+                    "여의도 마사지, 10군데 가봤다. 진짜는 2군데뿐이었다. 나머지는 가격 대비 퀄리티 쓰레기."
+                </div>
+                <p>우리는 가격, 위치, 서비스, 마사지사의 실력까지 모두 까발린다. 여의도 마사지 정보는 이게 끝이다. 더 이상 헛돌지 마라.</p>
+                <a href="tel:010-6279-0862" class="read-more">📞 진짜 정보 원하면 전화해</a>
+            </div>
+
+            <div class="blog-card">
+                <div class="meta">📅 2025.03.10 | ✍️ 여의도 마사지 정보팀</div>
+                <h2>여의도 마사지 가격, 너무 비싸지 않냐?</h2>
+                <p>여의도 마사지 가격, 기본 10만원부터 시작한다. 1시간에 10만원? 말이 안 된다고 생각할 수 있다. 근데 진짜 잘하는 곳은 그 값어치를 한다. 문제는 가짜다. 똑같은 가격 받고 10분 만에 끝내는 곳, 수건도 안 갈아주는 곳, 마사지사가 핸드폰 보는 곳.</p>
+                <p>여의도 마사지 정보에서는 가격 대비 퀄리티를 철저히 검증한다. 우리가 추천하는 곳은 단 한 군데도 가짜가 없다. 직접 가서 확인하고, 가격 공개한다.</p>
+                <p>여의도 마사지 추천, 여의도 스웨디시 가격, 여의도 건마 후기. 다 여기 있다. 속지 마라. 진짜 정보는 돈 주고도 못 구한다. 근데 우리는 공짜로 알려준다.</p>
+                <a href="tel:010-6279-0862" class="read-more">📞 가격 궁금하면 전화해</a>
+            </div>
+
+            <div class="blog-card">
+                <div class="meta">📅 2025.03.05 | ✍️ 여의도 마사지 정보팀</div>
+                <h2>여의도 1인샵 vs 건마, 뭐가 달라?</h2>
+                <p>여의도 1인샵? 여의도 건마? 이름은 달라도 결국 마사지다. 근데 왜 가격이 2배 차이 나냐? 이유는 간단하다. 1인샵은 프라이빗하고, 집중 케어가 가능하다. 건마는 시설이 크고, 다양한 코스가 있다. 근데 문제는...</p>
+                <p>여의도 마사지 정보에서 직접 비교했다. 1인샵 5곳, 건마 5곳. 결과는? 1인샵이 훨씬 낫다. 이유? 마사지사가 한 명만 집중하기 때문이다. 건마는 로테이션이고, 손님을 번호로 부른다. 1인샵은 이름을 기억한다.</p>
+                <p>여의도 마사지 추천은 무조건 1인샵이다. 단, 모든 1인샵이 좋은 건 아니다. 가짜 1인샵도 많다. 우리가 검증한 곳만 가라.</p>
+                <a href="tel:010-6279-0862" class="read-more">📞 1인샵 정보 원하면 전화해</a>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="font-size: 1.3rem; color: #f0e68c;">더 많은 여의도 마사지 정보가 필요하다면?</p>
+                <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+                <p style="margin-top: 15px; color: #888;">진짜 후기, 진짜 가격, 진짜 힐링. 여의도 마사지 정보는 이게 끝이다.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 여의도 마사지 정보 | 모든 정보는 직접 검증한 내용입니다.</p>
+            <p>가짜 정보에 속지 마세요. 진짜 여의도 마사지 정보는 여기 있습니다.</p>
+            <p style="margin-top: 10px;"><a href="tel:010-6279-0862" style="color: #f0e68c;">📞 010-6279-0862</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

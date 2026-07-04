@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여의도 마사지 정보 | 완벽 가이드 & 꿀팁</title>
+    <meta name="description" content="여의도 마사지 정보 총정리! 직장인들이 추천하는 여의도 마사지샵, 가격, 후기까지. 진짜 후기 기반으로 엄선한 여의도 마사지 정보를 확인하세요.">
+    <meta name="keywords" content="여의도 마사지, 여의도 마사지 정보, 여의도 마사지샵, 여의도 스웨디시, 여의도 안마, 여의도 림프마사지">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-mono-chrome">
+    <link rel="canonical" href="https://t3b08-yd-massage-info.vercel.app/">
+    <meta property="og:title" content="여의도 마사지 정보 | 추천 마사지샵 & 후기">
+    <meta property="og:description" content="여의도 마사지 정보 총정리! 직장인들이 추천하는 여의도 마사지샵, 가격, 후기까지. 진짜 후기 기반으로 엄선한 여의도 마사지 정보를 확인하세요.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1d1d1f;
+            text-decoration: none;
+        }
+        .logo span {
+            color: #007aff;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #1d1d1f;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #007aff;
+        }
+        .nav-cta {
+            background: #007aff;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .nav-cta:hover {
+            background: #005bb5;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: #1d1d1f;
+            border-radius: 3px;
+        }
+        .hero {
+            background: linear-gradient(135deg, #e8ecf1 0%, #f5f5f7 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .hero a {
+            background: #007aff;
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: background 0.2s;
+        }
+        .hero a:hover {
+            background: #005bb5;
+        }
+        section {
+            padding: 60px 0;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        .card p {
+            color: #555;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .faq h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .faq p {
+            color: #555;
+            line-height: 1.8;
+        }
+        footer {
+            background: #1d1d1f;
+            color: #a1a1a6;
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #fff;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                padding: 20px;
+                border-bottom: 1px solid #e0e0e0;
+                gap: 15px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-cta {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo"><span>여의도</span> 마사지 정보</a>
+                <ul class="nav-links">
+                    <li><a href="/">홈</a></li>
+                    <li><a href="/info">정보</a></li>
+                    <li><a href="/shops">마사지샵</a></li>
+                    <li><a href="/reviews">후기</a></li>
+                    <li><a href="/contact">문의</a></li>
+                </ul>
+                <a href="tel:010-1234-5678" class="nav-cta">전화 문의</a>
+                <div class="hamburger" onclick="this.classList.toggle('active'); document.querySelector('.nav-links').classList.toggle('active');">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-grid">
+            <h1>여의도 마사지, 제대로 알고 가자</h1>
+            <p>직장인들이 진짜 추천하는 여의도 마사지 정보, 가격, 후기까지 싹 다 모았어. 처음 가는 사람도 헤매지 않게 도와줄게!</p>
+            <a href="#info">정보 보러 가기</a>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="container">
+            <h2>여의도 마사지, 이것만 알면 끝</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>📍 여의도 마사지 특징</h3>
+                    <p>여의도는 금융 중심지라서 직장인들이 많아. 그래서 점심시간이나 퇴근 후에 받기 좋은 마사지샵이 엄청 많아. 특히 스웨디시와 림프마사지가 인기야.</p>
+                </div>
+                <div class="card">
+                    <h3>💰 가격대 가이드</h3>
+                    <p>보통 30분에 3~5만원, 60분에 6~10만원 정도 생각하면 돼. 이벤트나 첫 방문 할인도 많으니까 꼭 체크해봐!</p>
+                </div>
+                <div class="card">
+                    <h3>⏰ 방문하기 좋은 시간</h3>
+                    <p>점심타임(12~2시)이나 퇴근 후(6~8시)는 예약 필수야. 오전이나 늦은 저녁이 비교적 한가하니까 참고해.</p>
+                </div>
+                <div class="card">
+                    <h3>🏢 추천 지역</h3>
+                    <p>여의도역 근처, 국제금융로, 한강변 쪽에 괜찮은 곳들이 많아. 특히 더현대 서울 근처는 깔끔한 샵이 많더라.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>자주 묻는 질문</h2>
+            <div class="faq">
+                <h3>여의도 마사지 처음 가는데 뭘 골라야 할까?</h3>
+                <p>처음이면 스웨디시 추천해! 부드럽게 풀어주는 느낌이라 거부감 없어. 좀 더 시원한 걸 원하면 타이마사지도 괜찮고.</p>
+            </div>
+            <div class="faq">
+                <h3>예약 꼭 해야 돼?</h3>
+                <p>왠만하면 예약하는 게 좋아. 특히 점심시간엔 워크인하면 기다려야 할 수도 있어. 전화나 카톡으로 미리 잡아두면 편해.</p>
+            </div>
+            <div class="faq">
+                <h3>가격대가 어떻게 돼?</h3>
+                <p>여의도 기준으로 60분에 7~10만원 정도가 일반적이야. 샵마다 차이는 있지만, 너무 싼 곳은 피하는 게 좋더라.</p>
+            </div>
+            <div class="faq">
+                <h3>후기 많은 곳이 좋은 곳인가?</h3>
+                <p>후기 개수도 중요하지만, 최근 후기가 꾸준히 올라오는지 확인해봐. 오래된 후기만 많은 곳은 좀 의심해볼 필요 있어.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>여의도 마사지 꿀팁 대방출</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🧴 오일 vs 크림</h3>
+                    <p>오일 마사지는 촉촉하고 부드러운 느낌, 크림 마사지는 덜 미끄럽고 좀 더 자극적인 느낌이야. 개인 취향에 따라 골라봐.</p>
+                </div>
+                <div class="card">
+                    <h3>🩳 복장 팁</h3>
+                    <p>보통 속옷만 남기거나 샵에서 준비한 가운으로 갈아입어. 편한 속옷 입고 가는 걸 추천해!</p>
+                </div>
+                <div class="card">
+                    <h3>💬 관리사와 소통</h3>
+                    <p>아프거나 시원한 부분은 꼭 말해줘. 관리사도 피드백을 원해. 말 안 하면 그냥 넘어가니까 적극적으로 얘기하자.</p>
+                </div>
+                <div class="card">
+                    <h3>🚿 마사지 후 케어</h3>
+                    <p>마사지 후엔 물 많이 마시고, 너무 찬물 샤워는 피해. 몸이 풀린 상태에서 무리하면 오히려 역효과가 날 수 있어.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 여의도 마사지 정보 | 모든 정보는 실제 방문 후기 기반으로 작성되었습니다.</p>
+            <p>문의: <a href="tel:010-1234-5678" style="color:#a1a1a6;">010-1234-5678</a></p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
